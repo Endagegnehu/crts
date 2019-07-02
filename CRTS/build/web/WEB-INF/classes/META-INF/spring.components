@@ -1,0 +1,18 @@
+#
+#Mon Jul 01 18:17:54 GMT-08:00 2019
+entity.case_file=javax.persistence.Entity,javax.persistence.Table
+entity.cr_file=javax.persistence.Entity,javax.persistence.Table
+entity.address=javax.persistence.Entity,javax.persistence.Table
+entity.criminal_profile=javax.persistence.Entity,javax.persistence.Table
+dao.OfficerDaoImpl=org.springframework.stereotype.Component
+entity.job=javax.persistence.Entity,javax.persistence.Table
+service.CrimeLogServiceImpl=org.springframework.stereotype.Component
+entity.role=javax.persistence.Entity,javax.persistence.Table
+entity.rank=javax.persistence.Entity,javax.persistence.Table
+entity.users=javax.persistence.Entity,javax.persistence.Table
+service.OfficerServiceImpl=org.springframework.stereotype.Component
+controller.PageController=org.springframework.stereotype.Component
+dao.CrimeLogDaoImpl=org.springframework.stereotype.Component
+entity.office=javax.persistence.Entity,javax.persistence.Table
+entity.crime_log=javax.persistence.Entity,javax.persistence.Table
+controller.UserController=org.springframework.stereotype.Component
