@@ -27,7 +27,15 @@ public class OfficerDaoImpl implements OfficerDao{
         
         for(job tempjob : officersList)
         {
+<<<<<<< HEAD
             idList.add(tempjob.getUsers_idusers());
+=======
+<<<<<<< HEAD
+            idList.add(tempjob.getUsers_idusers());
+=======
+            idList.add(tempjob.getIdjob());
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
+>>>>>>> a9a1455a2964ec603a22488d8f6747aa1af7f609
         }
         
         for(Integer num : idList)
@@ -36,7 +44,11 @@ public class OfficerDaoImpl implements OfficerDao{
             
             for(users tempuser : userList)
             {
+<<<<<<< HEAD
                 offlist.add(tempuser.getUser_name());
+=======
+                offlist.add(tempuser.getFirst_name());
+>>>>>>> a9a1455a2964ec603a22488d8f6747aa1af7f609
             }
         }
         return offlist;
