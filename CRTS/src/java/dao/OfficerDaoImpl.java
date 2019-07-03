@@ -27,7 +27,11 @@ public class OfficerDaoImpl implements OfficerDao{
         
         for(job tempjob : officersList)
         {
+<<<<<<< HEAD
             idList.add(tempjob.getUsers_idusers());
+=======
+            idList.add(tempjob.getIdjob());
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
         }
         
         for(Integer num : idList)

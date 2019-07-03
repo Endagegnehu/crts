@@ -12,13 +12,22 @@ import service.CrimeLogService;
 import service.OfficerService;
 
 @Controller
+<<<<<<< HEAD
+=======
+@RequestMapping("/users")
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
 public class UserController {
     
     @Autowired
     private CrimeLogService crimeLogService;
     
+<<<<<<< HEAD
     @PostMapping("/savecrimelog")
     public String SaveCrimeLog(HttpServletRequest request)
+=======
+    @PostMapping("/saveCrimeLog")
+    public String SaveCrimeLog(HttpServletRequest request,Model model)
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
     {
         int id =Integer.parseInt(request.getParameter("crimeid"));
         String crimetype = request.getParameter("crimetype");
@@ -29,8 +38,11 @@ public class UserController {
         int officerid = Integer.parseInt(request.getParameter("assignedofficer"));
         String crimedescription = request.getParameter("crimedescription");
         
+<<<<<<< HEAD
         
         
+=======
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
         crime_log crimelog = new crime_log(id, crimetype, occureddate, registereddate, defendantname, plaintiffname, officerid, crimedescription);
         
         crimeLogService.saveCrimeLog(crimelog);
