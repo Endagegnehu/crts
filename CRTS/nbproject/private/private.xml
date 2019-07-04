@@ -3,8 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/web/index.jsp</file>
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/controller/LogInController.java</file>
+=======
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/web/WEB-INF/springmvc-servlet.xml</file>
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/controller/UserController.java</file>
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
         </group>
     </open-files>
 </project-private>

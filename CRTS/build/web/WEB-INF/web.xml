@@ -3,8 +3,23 @@
   <display-name>spring-mvc-crud-demo</display-name>
 
   <welcome-file-list>
+<<<<<<< HEAD
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>index.html</welcome-file>
+=======
+<<<<<<< HEAD
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+=======
+<<<<<<< HEAD
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+=======
+    <welcome-file>/WEB_INF/view/index.jsp</welcome-file>
+    <welcome-file>/WEB_INF/view/index.html</welcome-file>
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
+>>>>>>> a9a1455a2964ec603a22488d8f6747aa1af7f609
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
   </welcome-file-list>
 
   <servlet>

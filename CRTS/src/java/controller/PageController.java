@@ -11,6 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import service.OfficerService;
 
 @Controller
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+@RequestMapping("/pages")
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
+>>>>>>> a9a1455a2964ec603a22488d8f6747aa1af7f609
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
 public class PageController {
     
     @Autowired
