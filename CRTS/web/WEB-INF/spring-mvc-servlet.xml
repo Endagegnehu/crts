@@ -23,7 +23,23 @@
 	<!-- Define Spring MVC view resolver -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<<<<<<< HEAD
 		<property name="prefix" value="/" />
+=======
+<<<<<<< HEAD
+		<property name="prefix" value="/" />
+=======
+<<<<<<< HEAD
+		<property name="prefix" value="/" />
+=======
+<<<<<<< HEAD
+		<property name="prefix" value="/" />
+=======
+		<property name="prefix" value="/WEB-INF/view/" />
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
+>>>>>>> a9a1455a2964ec603a22488d8f6747aa1af7f609
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
 		<property name="suffix" value=".jsp" />
 	</bean>
 

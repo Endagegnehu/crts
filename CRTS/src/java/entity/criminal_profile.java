@@ -40,6 +40,27 @@ public class criminal_profile {
     @Column(name = "academic_level")
     private String academic_level;
     
+<<<<<<< HEAD
+=======
+    @Column(name = "photo_id")
+    private String photo_id;
+
+    public criminal_profile(int idsuspect, String first_name, String middle_name, String last_name, String age, String religion, String occupation, String marital_status, String addiction, String academic_level, String photo_id) {
+        this.idsuspect = idsuspect;
+        this.first_name = first_name;
+        this.middle_name = middle_name;
+        this.last_name = last_name;
+        this.age = age;
+        this.religion = religion;
+        this.occupation = occupation;
+        this.marital_status = marital_status;
+        this.addiction = addiction;
+        this.academic_level = academic_level;
+        this.photo_id = photo_id;
+    }
+    
+    
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
     public int getIdsuspect() {
         return idsuspect;
     }
@@ -120,6 +141,7 @@ public class criminal_profile {
         this.academic_level = academic_level;
     }
 
+<<<<<<< HEAD
     public criminal_profile(int idsuspect, String first_name, String middle_name, String last_name, String age, String religion, String occupation, String marital_status, String addiction, String academic_level) {
         this.idsuspect = idsuspect;
         this.first_name = first_name;
@@ -139,4 +161,13 @@ public class criminal_profile {
     }
     
     
+=======
+    public String getPhoto_id() {
+        return photo_id;
+    }
+
+    public void setPhoto_id(String photo_id) {
+        this.photo_id = photo_id;
+    }
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
 }

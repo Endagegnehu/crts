@@ -31,12 +31,27 @@ public class users {
     private String last_name;   
    
     @Column(name = "created_at")
+<<<<<<< HEAD
     private String created_at;
     
     @Column(name = "updated_at")
     private String updated_at;
     
     public users(int idusers, String user_name, String password, String email, String first_name, String last_name, String created_at, String updated_at) {
+=======
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date created_at;
+    
+    @Column(name = "updated_at")
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date updated_at;
+
+    public users() {
+        
+    }
+
+    public users(int idusers, String user_name, String password, String email, String first_name, String last_name, Date created_at, Date updated_at) {
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
         this.idusers = idusers;
         this.user_name = user_name;
         this.password = password;
@@ -47,6 +62,7 @@ public class users {
         this.updated_at = updated_at;
     }
 
+<<<<<<< HEAD
     public String getCreated_at() {
         return created_at;
     }
@@ -66,6 +82,10 @@ public class users {
    public users() {
         
     }
+=======
+     
+    
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
     public int getIdusers() {
         return idusers;
     }
@@ -114,7 +134,26 @@ public class users {
         this.last_name = last_name;
     }
 
+<<<<<<< HEAD
   
+=======
+    public Date getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(Date created_at) {
+        this.created_at = created_at;
+    }
+
+    public Date getUpdated_at() {
+        return updated_at;
+    }
+
+    public void setUpdated_at(Date updated_at) {
+        this.updated_at = updated_at;
+    }
+
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
     @Override
     public String toString() {
         return "users{" + "idusers=" + idusers + ", user_name=" + user_name + ", password=" + password + ", email=" + email + ", first_name=" + first_name + ", last_name=" + last_name + ", created_at=" + created_at + ", updated_at=" + updated_at + '}';

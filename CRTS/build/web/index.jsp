@@ -12,6 +12,10 @@
         <title>CRTS</title>
     </head>
     <body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
         <h1>CRTS</h1>
         <form action="login" method="post">
             <table>
@@ -30,5 +34,11 @@
         </form>
         <br/>
         ${msg}
+<<<<<<< HEAD
+=======
+=======
+        <h1>Hello World!</h1>
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
     </body>
 </html>
