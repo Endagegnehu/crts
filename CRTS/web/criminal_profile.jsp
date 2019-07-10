@@ -76,7 +76,10 @@
             </tr>
             <tr></tr>
             <tr>
+<<<<<<< HEAD
                 <td></td>
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
                 <th>Address</th>
             </tr>
             <tr>
@@ -105,6 +108,9 @@
             </tr>
             </table>
         </form>
+<<<<<<< HEAD
         ${criminal_profile_err}
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
     </body>
 </html>

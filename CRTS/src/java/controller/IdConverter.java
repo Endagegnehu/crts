@@ -1,6 +1,9 @@
 package controller;
 
+<<<<<<< HEAD
 import entity.address;
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
 import entity.job;
 import entity.users;
 import java.util.ArrayList;
@@ -31,6 +34,7 @@ public class IdConverter {
         {
             offid = tempusers.getIdusers();
         }
+<<<<<<< HEAD
         session.getTransaction().commit();
         return offid;
         }
@@ -85,6 +89,9 @@ public class IdConverter {
             offid = tempusers.getIdjob();
         }
         session.getTransaction().commit();
+=======
+        
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
         return offid;
         }
         finally
@@ -92,5 +99,8 @@ public class IdConverter {
             factory.close();
         }
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
 }

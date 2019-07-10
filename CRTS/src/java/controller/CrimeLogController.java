@@ -1,6 +1,7 @@
 package controller;
 
 import entity.crime_log;
+<<<<<<< HEAD
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,24 @@ public class CrimeLogController {
     {
         try
         {
+=======
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import service.CrimeLogService;
+
+@Controller
+public class CrimeLogController {
+    
+    @Autowired
+    private CrimeLogService crimeLogService;
+    
+    
+    @PostMapping("/savecrimelog")
+    public String SaveCrimeLog(HttpServletRequest request)
+    {
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
         IdConverter idConverter = new IdConverter();
         int id =Integer.parseInt(request.getParameter("crimeid"));
         String crimetype = request.getParameter("crimetype");
@@ -51,12 +70,15 @@ public class CrimeLogController {
         crime_log crimelog = new crime_log(id, crimetype, occureddate, registereddate, defendantname, plaintiffname, officerid, crimedescription);
         
         crimeLogService.saveCrimeLog(crimelog);
+<<<<<<< HEAD
         }
         catch(Exception e)
                 {
                     model.addAttribute("crime_log_err", "Incorrect Entry"); 
                     return "redirect:/crimelogform";
                 }
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
         return "index";
     }
     
