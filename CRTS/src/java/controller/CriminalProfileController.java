@@ -5,6 +5,10 @@ import entity.criminal_profile;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,11 +18,24 @@ import service.CriminalProfileService;
 
 @Controller
 @RequestMapping("criminalprofile")
+<<<<<<< HEAD
+=======
+=======
+import org.springframework.web.bind.annotation.PostMapping;
+import service.CriminalProfileService;
+
+@Controller
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 public class CriminalProfileController {
     
     @Autowired
     private CriminalProfileService criminalProfileService;
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
     @RequestMapping("/page")
     public String page()
     {
@@ -30,6 +47,14 @@ public class CriminalProfileController {
     {
         try
         {
+<<<<<<< HEAD
+=======
+=======
+    @PostMapping("/criminalprofile")
+    public String RegisterSuspect(HttpServletRequest request)
+    {
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         int suspectid = Integer.parseInt(request.getParameter("idsuspect"));
         String first_name = request.getParameter("first_name");
         String middle_name = request.getParameter("middle_name");
@@ -51,11 +76,20 @@ public class CriminalProfileController {
         address address = new address(home_number, phone_number, region, woreda, kebele, suspectid);
         
         return criminalProfileService.SaveSuspect(criminalprofile, address);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         }
         catch(Exception e)
         {
                 model.addAttribute("criminal_profile_err", "Criminal ID Already Exist");
                 return "criminal_profile";
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
     }
 }

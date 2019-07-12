@@ -12,6 +12,16 @@
         <title>CRTS</title>
     </head>
     <body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         <h1>CRTS</h1>
         <form action="login" method="post">
             <table>
@@ -30,5 +40,17 @@
         </form>
         <br/>
         ${msg}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        <h1>Hello World!</h1>
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
     </body>
 </html>

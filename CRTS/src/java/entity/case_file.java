@@ -3,8 +3,11 @@ package entity;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+<<<<<<< HEAD
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -13,7 +16,10 @@ import javax.persistence.Table;
 public class case_file {
     
     @Id
+<<<<<<< HEAD
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
     @Column(name = "idcase_file")
     private int idcase_file;
     
@@ -50,7 +56,12 @@ public class case_file {
     @Column(name = "short_sumary")
     private String short_sumary;
 
+<<<<<<< HEAD
     public case_file( String typeof_crime, Date dateof_crime, Date crime_tip_date, int cr_file_id, int log_file_id, Date investigation_end_date, int investigation_authorizer, int investigator_id, int prosecutor_id, int suspect_id, String short_sumary) {
+=======
+    public case_file(int idcase_file, String typeof_crime, Date dateof_crime, Date crime_tip_date, int cr_file_id, int log_file_id, Date investigation_end_date, int investigation_authorizer, int investigator_id, int prosecutor_id, int suspect_id, String short_sumary) {
+        this.idcase_file = idcase_file;
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         this.typeof_crime = typeof_crime;
         this.dateof_crime = dateof_crime;
         this.crime_tip_date = crime_tip_date;

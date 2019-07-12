@@ -18,23 +18,41 @@ public class ProfileServiceImpl implements ProfileService
 
     @Override
     @Transactional
+<<<<<<< HEAD
     public List<users> getUser(int userid) 
     {
         return profileDao.getUser(userid);
+=======
+    public List<users> getUser(String username) 
+    {
+        return profileDao.getUser(username);
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
     }
 
     @Override
     @Transactional
+<<<<<<< HEAD
     public List<address> getAddress(int userid)
     {
         return profileDao.getAddress(userid);
+=======
+    public List<address> getAddress(String username)
+    {
+        return profileDao.getAddress(username);
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
     }
 
     @Override
     @Transactional
+<<<<<<< HEAD
     public List<job> getJob(int userid) 
     {
         return profileDao.getJob(userid);
+=======
+    public List<job> getJob(String username) 
+    {
+        return profileDao.getJob(username);
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
     }
 
     @Override

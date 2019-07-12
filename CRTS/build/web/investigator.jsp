@@ -12,7 +12,10 @@
         <title>Investigator</title>
     </head>
     <body>
+<<<<<<< HEAD
        <h1>${name}</h1>
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         <a href="investigatorprofile">User Profile</a>
         <br>
         <a href="crimelogview">Crime Log</a>

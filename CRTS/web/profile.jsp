@@ -68,6 +68,7 @@
                 </tr>
                 <tr>
                     <th><label>Job Name</label></th>
+<<<<<<< HEAD
                     <td><select name="job">
                             <option value="<c:forEach var="item" items="${job}">${item.name}</c:forEach>"><c:forEach var="item" items="${job}">${item.name}</c:forEach></option>
                             <option value="officer">officer</option>
@@ -76,6 +77,15 @@
                             <option value="registrar">registrar</option>
                             <option value="judge">judge</option>
                             <option value="lawyer">lawyer</option>
+=======
+                    <td><select name="job" value="<c:forEach var="item" items="${job}">${item.name}</c:forEach>">
+                            <option value="officer">Police Officer</option>
+                            <option value="investigator">Investigator</option>
+                            <option value="prosecutor">Prosecutor</option>
+                            <option value="registrar">Court Registrar Office</option>
+                            <option value="judge">Judge</option>
+                            <option value="lawyer">Lawyer</option>
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
                     </select></td>
                 </tr>
                 <tr>

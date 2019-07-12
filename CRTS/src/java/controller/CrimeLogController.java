@@ -1,12 +1,19 @@
 package controller;
 
 import entity.crime_log;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.ModelAttribute;
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
@@ -15,7 +22,10 @@ import service.OfficerService;
 
 @Controller
 @RequestMapping("/crimelog")
+<<<<<<< HEAD
 @SessionAttributes({"name","id"})
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 public class CrimeLogController {
        
     @Autowired
@@ -38,6 +48,27 @@ public class CrimeLogController {
     {
         try
         {
+<<<<<<< HEAD
+=======
+=======
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import service.CrimeLogService;
+
+@Controller
+public class CrimeLogController {
+    
+    @Autowired
+    private CrimeLogService crimeLogService;
+    
+    
+    @PostMapping("/savecrimelog")
+    public String SaveCrimeLog(HttpServletRequest request)
+    {
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         IdConverter idConverter = new IdConverter();
         int id =Integer.parseInt(request.getParameter("crimeid"));
         String crimetype = request.getParameter("crimetype");
@@ -53,12 +84,17 @@ public class CrimeLogController {
         crime_log crimelog = new crime_log(id, crimetype, occureddate, registereddate, defendantname, plaintiffname, officerid, crimedescription);
         
         crimeLogService.saveCrimeLog(crimelog);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         }
         catch(Exception e)
                 {
                     model.addAttribute("crime_log_err", "Incorrect Entry"); 
                     return "redirect:/crimelogform";
                 }
+<<<<<<< HEAD
         return "index";
     }
     
@@ -69,4 +105,11 @@ public class CrimeLogController {
         model.addAttribute("crime_log", thecrimelog);
         return "crime_log_list";
     }
+=======
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+        return "index";
+    }
+    
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 }

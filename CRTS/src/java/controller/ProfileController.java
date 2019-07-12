@@ -14,7 +14,11 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import service.ProfileService;
 
 @Controller
+<<<<<<< HEAD
 @SessionAttributes({"name","id"})
+=======
+@SessionAttributes("name")
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 @RequestMapping("profile")
 public class ProfileController 
 {
@@ -22,11 +26,19 @@ public class ProfileController
     private ProfileService profileService;
     
     @RequestMapping("/page")
+<<<<<<< HEAD
     public String page(@ModelAttribute("id") int userid, Model model)
     {
         List<users> theuser = profileService.getUser(userid);
         List<address> theAddress = profileService.getAddress(userid);
         List<job> theJob = profileService.getJob(userid);
+=======
+    public String page(@ModelAttribute("name") String username, Model model)
+    {
+        List<users> theuser = profileService.getUser(username);
+        List<address> theAddress = profileService.getAddress(username);
+        List<job> theJob = profileService.getJob(username);
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         model.addAttribute("user",theuser);
         model.addAttribute("address", theAddress);
         model.addAttribute("job", theJob);
@@ -34,10 +46,17 @@ public class ProfileController
     }
     
     @RequestMapping("/updateprofile")
+<<<<<<< HEAD
     public String updateProfile(@ModelAttribute("id") int idusers,HttpServletRequest request , Model model)
     {
         String user_name,first_name,last_name,email,password,region,woreda,keble,home_number,phon,name;
         int idaddress,idjob;
+=======
+    public String updateProfile(@ModelAttribute("name") String username,HttpServletRequest request , Model model)
+    {
+        String user_name,first_name,last_name,email,password,region,woreda,keble,home_number,phon,name;
+        int idusers,idaddress,idjob;
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         
         user_name = request.getParameter("user_name");
         first_name = request.getParameter("first_name");
@@ -52,6 +71,10 @@ public class ProfileController
         name = request.getParameter("job");
         
         IdConverter idconverter = new IdConverter();
+<<<<<<< HEAD
+=======
+        idusers = idconverter.Convert(username);
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         idaddress = idconverter.getaddressid(idusers);
         idjob = idconverter.getjobid(idusers);
         

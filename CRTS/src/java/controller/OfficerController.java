@@ -8,7 +8,11 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
 @RequestMapping("officer")
+<<<<<<< HEAD
 @SessionAttributes({"name","id"})
+=======
+@SessionAttributes("name")
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
 public class OfficerController {
     
     @RequestMapping("page")

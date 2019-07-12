@@ -3,12 +3,33 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/dao/ProfileDaoImpl.java</file>
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/controller/OfficerController.java</file>
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/service/ProfileServiceImpl.java</file>
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/service/ProfileService.java</file>
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/dao/ProfileDao.java</file>
             <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/controller/ProfileController.java</file>
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/web/index.jsp</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/web/index.jsp</file>
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/controller/LogInController.java</file>
+=======
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/web/WEB-INF/springmvc-servlet.xml</file>
+            <file>file:/C:/Users/FALCON/Documents/NetBeansProjects/CRTS/src/java/controller/UserController.java</file>
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
         </group>
     </open-files>
 </project-private>
