@@ -1,12 +1,26 @@
 package controller;
 
 import entity.crime_log;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.ModelAttribute;
+=======
+<<<<<<< HEAD
+import org.springframework.web.bind.annotation.ModelAttribute;
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
@@ -15,7 +29,14 @@ import service.OfficerService;
 
 @Controller
 @RequestMapping("/crimelog")
+<<<<<<< HEAD
 @SessionAttributes({"name","id"})
+=======
+<<<<<<< HEAD
+@SessionAttributes({"name","id"})
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 public class CrimeLogController {
        
     @Autowired
@@ -38,6 +59,30 @@ public class CrimeLogController {
     {
         try
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import service.CrimeLogService;
+
+@Controller
+public class CrimeLogController {
+    
+    @Autowired
+    private CrimeLogService crimeLogService;
+    
+    
+    @PostMapping("/savecrimelog")
+    public String SaveCrimeLog(HttpServletRequest request)
+    {
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         IdConverter idConverter = new IdConverter();
         int id =Integer.parseInt(request.getParameter("crimeid"));
         String crimetype = request.getParameter("crimetype");
@@ -53,12 +98,23 @@ public class CrimeLogController {
         crime_log crimelog = new crime_log(id, crimetype, occureddate, registereddate, defendantname, plaintiffname, officerid, crimedescription);
         
         crimeLogService.saveCrimeLog(crimelog);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         }
         catch(Exception e)
                 {
                     model.addAttribute("crime_log_err", "Incorrect Entry"); 
                     return "redirect:/crimelogform";
                 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         return "index";
     }
     
@@ -69,4 +125,14 @@ public class CrimeLogController {
         model.addAttribute("crime_log", thecrimelog);
         return "crime_log_list";
     }
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+        return "index";
+    }
+    
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 }

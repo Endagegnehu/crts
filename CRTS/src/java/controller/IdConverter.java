@@ -1,6 +1,17 @@
 package controller;
 
+<<<<<<< HEAD
 import entity.address;
+=======
+<<<<<<< HEAD
+import entity.address;
+=======
+<<<<<<< HEAD
+import entity.address;
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 import entity.job;
 import entity.users;
 import java.util.ArrayList;
@@ -31,6 +42,13 @@ public class IdConverter {
         {
             offid = tempusers.getIdusers();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         session.getTransaction().commit();
         return offid;
         }
@@ -85,6 +103,15 @@ public class IdConverter {
             offid = tempusers.getIdjob();
         }
         session.getTransaction().commit();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         return offid;
         }
         finally
@@ -92,5 +119,16 @@ public class IdConverter {
             factory.close();
         }
     }
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
+    
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 }

@@ -50,7 +50,17 @@ public class crime_log {
     {
         
     }
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+    
+=======
+
+   
+
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     public int getIdcrime_log() {
         return idcrime_log;
     }
@@ -114,11 +124,20 @@ public class crime_log {
     public void setCrime_description(String crime_description) {
         this.crime_description = crime_description;
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 
     @Override
     public String toString() {
         return "crime_log{" + "idcrime_log=" + idcrime_log + ", crime_type=" + crime_type + ", crime_occurred_date=" + crime_occurred_date + ", crime_registered_date=" + crime_registered_date + ", defendant_name=" + defendant_name + ", plaintiff_name=" + plaintiff_name + ", assigned_officer_id=" + assigned_officer_id + ", crime_description=" + crime_description + '}';
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     
     
 }

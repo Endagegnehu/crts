@@ -1,14 +1,18 @@
 package controller;
 
+<<<<<<< HEAD
 import entity.case_file;
 import entity.crime_log;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+=======
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
+<<<<<<< HEAD
 import service.CaseFileService;
 
 @Controller
@@ -19,6 +23,14 @@ public class CaseFileController
     @Autowired
     private CaseFileService caseFileService;
     
+=======
+
+@Controller
+@RequestMapping("/casefile")
+@SessionAttributes("name")
+public class CaseFileController 
+{
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     @RequestMapping("/page")
     public String Page()
     {
@@ -26,6 +38,7 @@ public class CaseFileController
     }
     
     @RequestMapping("/createcasefile")
+<<<<<<< HEAD
     public String CreateCaseFile(int crimelogid,Model model)
     {
         List<crime_log> theLog = caseFileService.getCrimelog(crimelogid);
@@ -78,4 +91,11 @@ public class CaseFileController
         model.addAttribute("casefile", casefile);
         return "list_case_file";
     }
+=======
+    public String CreateCaseFile(String crimelogid,Model model)
+    {
+        model.addAttribute("crimelogid", crimelogid);
+        return "create_case_file";
+    }
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 }

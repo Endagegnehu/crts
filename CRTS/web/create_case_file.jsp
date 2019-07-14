@@ -5,7 +5,10 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<<<<<<< HEAD
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+=======
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,6 +17,7 @@
     </head>
     <body>
         <h1>Create Case File</h1>
+<<<<<<< HEAD
         <form action="savecasefile" method="post">
             <table>
                 <tr>
@@ -75,5 +79,8 @@
                 </tr>
             </table>
         </form>
+=======
+        ${crimelogid}
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     </body>
 </html>

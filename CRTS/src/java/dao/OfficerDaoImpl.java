@@ -27,7 +27,35 @@ public class OfficerDaoImpl implements OfficerDao{
         
         for(job tempjob : officersList)
         {
+<<<<<<< HEAD
             idList.add(tempjob.getUsers_idusers());
+=======
+<<<<<<< HEAD
+            idList.add(tempjob.getUsers_idusers());
+=======
+<<<<<<< HEAD
+            idList.add(tempjob.getUsers_idusers());
+=======
+<<<<<<< HEAD
+            idList.add(tempjob.getUsers_idusers());
+=======
+<<<<<<< HEAD
+            idList.add(tempjob.getUsers_idusers());
+=======
+<<<<<<< HEAD
+            idList.add(tempjob.getUsers_idusers());
+=======
+<<<<<<< HEAD
+            idList.add(tempjob.getUsers_idusers());
+=======
+            idList.add(tempjob.getIdjob());
+>>>>>>> 01c912cd5a95c5ae85d28c97e8f6f6dc84dae9b2
+>>>>>>> a9a1455a2964ec603a22488d8f6747aa1af7f609
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         }
         
         for(Integer num : idList)
@@ -36,7 +64,31 @@ public class OfficerDaoImpl implements OfficerDao{
             
             for(users tempuser : userList)
             {
+<<<<<<< HEAD
                 offlist.add(tempuser.getUser_name());
+=======
+<<<<<<< HEAD
+                offlist.add(tempuser.getUser_name());
+=======
+<<<<<<< HEAD
+                offlist.add(tempuser.getUser_name());
+=======
+<<<<<<< HEAD
+                offlist.add(tempuser.getUser_name());
+=======
+<<<<<<< HEAD
+                offlist.add(tempuser.getUser_name());
+=======
+<<<<<<< HEAD
+                offlist.add(tempuser.getUser_name());
+=======
+                offlist.add(tempuser.getFirst_name());
+>>>>>>> a9a1455a2964ec603a22488d8f6747aa1af7f609
+>>>>>>> 897b593556fe478dbf8b7a9579c320831f3e65b9
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
             }
         }
         return offlist;

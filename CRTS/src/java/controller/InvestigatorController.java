@@ -27,10 +27,17 @@ public class InvestigatorController
         return "redirect:/crimelog/listcrimelog";
     }
     
+<<<<<<< HEAD
     @RequestMapping("/casefileview")
     public String CaseFile()
     {
         return "redirect:/casefile/casefileview";
+=======
+    @RequestMapping("/casefile")
+    public String CaseFile()
+    {
+        return "redirect:/casefile/page";
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     }
     
     @RequestMapping("/createcasefile")

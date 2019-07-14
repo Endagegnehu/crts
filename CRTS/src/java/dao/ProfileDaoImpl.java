@@ -17,29 +17,85 @@ public class ProfileDaoImpl implements ProfileDao
     private SessionFactory sessionFactory;
     
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     public List<users> getUser(int userid) 
     {
      Session session = sessionFactory.getCurrentSession();
      
      List<users> theUser = session.createQuery("from users user where user.idusers='"+userid+"'").getResultList();
+<<<<<<< HEAD
+=======
+=======
+    public List<users> getUser(String username) 
+    {
+     Session session = sessionFactory.getCurrentSession();
+     
+     List<users> theUser = session.createQuery("from users user where user.user_name='"+username+"'").getResultList();
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
      return theUser;
     }
 
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     public List<address> getAddress(int userid)
     {
         Session session = sessionFactory.getCurrentSession();
         
         List<address> theAdress = session.createQuery("from address address where address.user_id='"+userid+"'").getResultList();
+<<<<<<< HEAD
+=======
+=======
+    public List<address> getAddress(String username)
+    {
+        int id = 0;
+        Session session = sessionFactory.getCurrentSession();
+        
+        List<users> theUser = session.createQuery("from users user where user.user_name='"+username+"'").getResultList();
+        for(users user :theUser)
+        {
+            id = user.getIdusers();
+        }
+        
+        List<address> theAdress = session.createQuery("from address address where address.user_id='"+id+"'").getResultList();
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         return theAdress;
     }
 
     @Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     public List<job> getJob(int userid) 
     {
         Session session = sessionFactory.getCurrentSession();
         
         List<job> thejob = session.createQuery("from job job where job.users_idusers='"+userid+"'").getResultList();
+<<<<<<< HEAD
+=======
+=======
+    public List<job> getJob(String username) 
+    {
+        int id = 0;
+        Session session = sessionFactory.getCurrentSession();
+        
+        List<users> theUser = session.createQuery("from users user where user.user_name='"+username+"'").getResultList();
+        for(users user :theUser)
+        {
+            id = user.getIdusers();
+        }
+        
+        List<job> thejob = session.createQuery("from job job where job.users_idusers='"+id+"'").getResultList();
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
         return thejob;
     }
 

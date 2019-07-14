@@ -76,7 +76,18 @@
             </tr>
             <tr></tr>
             <tr>
+<<<<<<< HEAD
                 <td></td>
+=======
+<<<<<<< HEAD
+                <td></td>
+=======
+<<<<<<< HEAD
+                <td></td>
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
                 <th>Address</th>
             </tr>
             <tr>
@@ -105,6 +116,17 @@
             </tr>
             </table>
         </form>
+<<<<<<< HEAD
         ${criminal_profile_err}
+=======
+<<<<<<< HEAD
+        ${criminal_profile_err}
+=======
+<<<<<<< HEAD
+        ${criminal_profile_err}
+=======
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     </body>
 </html>

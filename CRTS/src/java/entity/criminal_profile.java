@@ -40,6 +40,36 @@ public class criminal_profile {
     @Column(name = "academic_level")
     private String academic_level;
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    @Column(name = "photo_id")
+    private String photo_id;
+
+    public criminal_profile(int idsuspect, String first_name, String middle_name, String last_name, String age, String religion, String occupation, String marital_status, String addiction, String academic_level, String photo_id) {
+        this.idsuspect = idsuspect;
+        this.first_name = first_name;
+        this.middle_name = middle_name;
+        this.last_name = last_name;
+        this.age = age;
+        this.religion = religion;
+        this.occupation = occupation;
+        this.marital_status = marital_status;
+        this.addiction = addiction;
+        this.academic_level = academic_level;
+        this.photo_id = photo_id;
+    }
+    
+    
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     public int getIdsuspect() {
         return idsuspect;
     }
@@ -120,6 +150,16 @@ public class criminal_profile {
         this.academic_level = academic_level;
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
     public criminal_profile(int idsuspect, String first_name, String middle_name, String last_name, String age, String religion, String occupation, String marital_status, String addiction, String academic_level) {
         this.idsuspect = idsuspect;
         this.first_name = first_name;
@@ -139,4 +179,22 @@ public class criminal_profile {
     }
     
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    public String getPhoto_id() {
+        return photo_id;
+    }
+
+    public void setPhoto_id(String photo_id) {
+        this.photo_id = photo_id;
+    }
+>>>>>>> 314e1dd3b104f1446ecb2ceff62d3efe541b2476
+>>>>>>> ce04a11b37ed17ec7b8dbb5ad1588f15f53d759f
+>>>>>>> 4ac56edb36e166dfeb3e0f948b85612ddb0d4858
+>>>>>>> d63610874bdaef4b5a8d0257e89ca50c76957f40
 }
